@@ -1,0 +1,19 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    int NP1, CP1, NP2, CP2;
+    double VP1, VP2, TOTAL;
+    scanf("%d %d %lf", &NP1, &CP1, &VP1);
+    scanf("%d %d %lf", &NP2, &CP2, &VP2);
+    TOTAL = (CP1*VP1 + CP2*VP2);
+    printf("VALOR A PAGAR: R$ %.2lf\n", TOTAL);  
+    return 0;
+}

@@ -1,0 +1,54 @@
+#include <iostream>
+#include <stdio.h> 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+double VN;
+int VM, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12;
+scanf("%lf", &VN);
+VM = VN * 100;
+V1 = VM / 10000;
+VM = VM % 10000;
+V2 = VM / 5000;
+VM = VM % 5000;
+V3 = VM / 2000;
+VM = VM % 2000;
+V4 = VM / 1000;
+VM = VM % 1000;
+V5 = VM / 500;
+VM = VM % 500;
+V6 = VM / 200;
+VM = VM % 200;
+V7 = VM / 100;
+VM = VM % 100;
+V8 = VM / 50;
+VM = VM % 50;
+V9 = VM / 25;
+VM = VM % 25;
+V10 = VM / 10;
+VM = VM % 10;
+V11 = VM / 5;
+VM = VM % 5;
+V12 = VM / 1;
+printf("NOTAS:\n");
+printf("%d nota(s) de R$ 100.00\n", V1);
+printf("%d nota(s) de R$ 50.00\n", V2);
+printf("%d nota(s) de R$ 20.00\n", V3);
+printf("%d nota(s) de R$ 10.00\n", V4);
+printf("%d nota(s) de R$ 5.00\n", V5);
+printf("%d nota(s) de R$ 2.00\n", V6);
+printf("MOEDAS:\n");
+printf("%d moeda(s) de R$ 1.00\n", V7);
+printf("%d moeda(s) de R$ 0.50\n", V8);
+printf("%d moeda(s) de R$ 0.25\n", V9);
+printf("%d moeda(s) de R$ 0.10\n", V10);
+printf("%d moeda(s) de R$ 0.05\n", V11);
+printf("%d moeda(s) de R$ 0.01\n", V12);
+    return 0;
+}
