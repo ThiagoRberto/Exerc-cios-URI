@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int A, B, C, MaiorAB, Maior;
+ scanf("%d %d %d\n", &A, &B, &C);
+ MaiorAB = (A + B + abs(A-B)) / 2;
+ Maior = (MaiorAB + C + abs(MaiorAB - C)) / 2;
+ printf("%d eh o maior\n", Maior);
+    return 0;
+}

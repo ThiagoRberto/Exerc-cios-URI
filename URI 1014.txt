@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+int X;
+double Y, CSM;
+scanf("%d\n", &X);
+scanf("%lf\n", &Y);
+CSM = X / Y;
+printf("%.3lf km/l\n", CSM);
+    return 0;
+}

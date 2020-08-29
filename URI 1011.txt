@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h> 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+double R, VOLUME, PI;
+PI = 3.14159;
+scanf("%lf", &R);
+VOLUME = (4.0 / 3) * PI * pow(R,3);
+printf("VOLUME = %.3lf\n", VOLUME);
+    return 0;
+}
