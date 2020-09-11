@@ -1,0 +1,37 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int N, VM, V1, V2, V3, V4, V5, V6, V7;
+ scanf("%d", &N);
+ VM = N * 100;
+ V1 = VM / 10000;
+ VM = VM % 10000;
+ V2 = VM / 5000;
+ VM = VM % 5000;
+ V3 = VM / 2000;
+ VM = VM % 2000;
+ V4 = VM / 1000;
+ VM = VM % 1000;
+ V5 = VM / 500;
+ VM = VM % 500;
+ V6 = VM / 200;
+ VM = VM % 200;
+ V7 = VM / 100;
+ printf("%d\n", N);
+ printf("%d nota(s) de R$ 100,00\n", V1);
+ printf("%d nota(s) de R$ 50,00\n", V2);
+ printf("%d nota(s) de R$ 20,00\n", V3);
+ printf("%d nota(s) de R$ 10,00\n", V4);
+ printf("%d nota(s) de R$ 5,00\n", V5);
+ printf("%d nota(s) de R$ 2,00\n", V6);
+ printf("%d nota(s) de R$ 1,00\n", V7);
+    return 0;
+}

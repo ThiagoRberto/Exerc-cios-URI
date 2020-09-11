@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h> 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+double x1, y1, x2, y2, DIS;
+scanf("%lf %lf\n", &x1, &y1);
+scanf("%lf %lf\n", &x2, &y2);
+DIS = sqrt((pow(x2 - x1, 2)) + (pow(y2 - y1, 2))); 
+printf("%.4lf\n", DIS);
+    return 0;
+}

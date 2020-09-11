@@ -1,0 +1,19 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int N, H, M, S;
+ scanf("%d", &N);
+ H = N / 3600;
+ M = (N % 3600) / 60;
+ S = (N % 3600) % 60;
+ printf("%d:%d:%d\n", H, M, S);
+    return 0;
+}
