@@ -1,0 +1,22 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int A, B; /* Inicialização das Variáveis */
+ scanf("%d %d\n", &A, &B); /* Leitura dos Valores */
+ if(A % B == 0 || B % A == 0) /* Verificação de Múltiplo */
+ {
+    printf("Sao Multiplos\n");  
+ }
+ else {
+    printf("Nao sao Multiplos\n");
+ }
+    return 0;
+}

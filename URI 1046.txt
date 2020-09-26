@@ -1,0 +1,27 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int HI, HF, HD; /* Inicialização das Variáveis */
+ scanf("%d %d", &HI, &HF); /* Leitura das Variáveis */
+ if (HF == HI) /* Verificação de hora máxima */
+ {
+     printf("O JOGO DUROU 24 HORA(S)\n");
+ }
+ else if (HF > HI){
+     HD = HF - HI; /* Cálculo da duração */
+     printf("O JOGO DUROU %d HORA(S)\n", HD);
+ }
+ else if (HI > HF){
+     HD = (HF + 24) - HI; /* Cálculo da duração */
+     printf("O JOGO DUROU %d HORA(S)\n", HD);
+ }
+    return 0;
+}

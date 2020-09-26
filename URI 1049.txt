@@ -1,0 +1,67 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ char P1[15] ,P2[15] , P3[15]; /* Palavra 1, palavra 2, palavra 3*/
+ scanf("%s", &P1); /* Inserção dos valores*/
+ scanf("%s", &P2);
+ scanf("%s", &P3);
+ if (strcmp(P1,"vertebrado")==0)
+ {
+     if (strcmp(P2,"ave")==0)
+     {
+        if (strcmp(P3,"carnivoro")==0)
+        {
+            printf("aguia\n");
+        }
+        else if (strcmp(P3,"onivoro")==0)
+        {
+            printf("pomba\n");
+        }
+     }
+     else if (strcmp(P2,"mamifero")==0)
+     {
+        if (strcmp(P3,"onivoro")==0)
+        {
+            printf("homem\n");
+        }
+        else if (strcmp(P3,"herbivoro")==0)
+        {
+            printf("vaca\n");
+        }
+     }
+ }
+ else if (strcmp(P1,"invertebrado")==0)
+ {
+     if (strcmp(P2,"inseto")==0)
+     {
+         if (strcmp(P3,"hematofago")==0)
+        {
+            printf("pulga\n");
+        }
+        else if (strcmp(P3,"herbivoro")==0)
+        {
+            printf("lagarta\n");
+        }
+     }
+     else if (strcmp(P2,"anelideo")==0)
+     {
+        if (strcmp(P3,"hematofago")==0)
+        {
+            printf("sanguessuga\n");
+        }
+        else if (strcmp(P3,"onivoro")==0)
+        {
+            printf("minhoca\n");
+        } 
+     }     
+ }
+    return 0;
+}
