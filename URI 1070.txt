@@ -1,0 +1,22 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int X, I; // Inicialização de variáveis
+ scanf("%d", &X); // Leitura de variável
+ for (I = X; I < (X + 12); I++)  // Enquanto I menor que X mais 12 passo 1 faça
+ {
+     if (I % 2 != 0) // Verificação de número impar
+     {
+         printf("%d\n", I);
+     }
+ }
+    return 0;
+}

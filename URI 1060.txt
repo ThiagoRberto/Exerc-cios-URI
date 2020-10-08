@@ -1,0 +1,24 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int I, X = 0; // Inicialização de variáveis, X = Quantidade de números positivos
+ double VL; // VL = Valor
+ for (I = 0 ; I < 6; I++) // Enquanto I menor igual a 6 passo 1 faça
+ {
+   scanf("%lf", &VL); // Leitura de Variável 
+   if (VL >= 0) // Verificador de número positivo
+   {
+       X++;
+   }
+ }
+ printf("%d valores positivos\n", X);
+    return 0;
+}

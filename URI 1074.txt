@@ -1,0 +1,39 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int I, N, X; // Inicialização de variáveis
+ scanf("%d", &N); // Leitura de número de variáveis
+ for (I = 0; I < N; I++) // Enquanto I menor que N passo 1 faça
+ {
+     scanf("%d", &X); // Leitura de variável
+     if (X == 0) // Verificador de Nulo, Par, impar, positivo, negativo
+     {
+         printf("NULL\n");
+     }
+     else if (X % 2 != 0 && X > 0)
+     {
+         printf("ODD POSITIVE\n");
+     }
+     else if (X % 2 != 0 && X < 0)
+     {
+         printf("ODD NEGATIVE\n");
+     }
+     else if (X % 2 == 0 && X > 0)
+     {
+         printf("EVEN POSITIVE\n");
+     }
+     else if (X % 2 == 0 && X < 0)
+     {
+         printf("EVEN NEGATIVE\n");
+     }
+ }
+    return 0;
+}

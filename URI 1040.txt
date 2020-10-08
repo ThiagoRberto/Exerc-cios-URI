@@ -1,0 +1,38 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ double N1, N2, N3, N4, M, NE, MF; /* Inicialização das variáveis*/
+ scanf("%lf %lf %lf %lf", &N1, &N2, &N3, &N4); /* Leitura das notas*/
+ M = ((N1 * 2) + (N2 * 3) + (N3 * 4) + N4) / 10; /* Cálculo da Média */
+ printf("Media: %.1lf\n", M);
+ if (M >= 7)
+ {
+     printf("Aluno aprovado.\n");
+ }
+ else if (M  < 5)
+ {
+     printf("Aluno reprovado.\n");
+ }
+ else {
+     printf("Aluno em exame.\n");
+     scanf("%lf", &NE); /* Leitura da Nota do Exame */
+     printf("Nota do exame: %.1lf\n", NE);
+     MF = (NE + M) / 2; /* Cálculo da média final */
+     if (MF >= 5){
+         printf("Aluno aprovado.\n");
+     }
+     else {
+         printf("Aluno reprovado.\n");
+     }
+     printf("Media final: %.1lf\n", MF);
+ }
+ return 0;
+}

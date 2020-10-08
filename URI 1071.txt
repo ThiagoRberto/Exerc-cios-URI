@@ -1,0 +1,35 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int X, Y, I, SO = 0; // Inicialização de variáveis | SO = Soma
+ scanf("%d", &X); // Leitura de variável
+ scanf("%d", &Y);
+ if (X < Y){
+     for (I = (X + 1); I < Y; I++)  // Enquanto I menor que Y passo 1 faça
+     {
+         if (I % 2 != 0) // Verificação de número impar
+         {
+             SO = SO + I;
+         }
+     }
+ }
+ else {
+     for (I = (Y + 1); I < X; I++)  // Enquanto I menor que X passo 1 faça
+     {
+         if (I % 2 != 0) // Verificação de número impar
+         {
+             SO = SO + I;
+         }
+     }
+ }
+    printf("%d\n", SO);
+    return 0;
+}

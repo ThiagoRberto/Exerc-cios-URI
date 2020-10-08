@@ -1,0 +1,52 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ double SL, SA, RG; // Inicialização de Variáveis, SL = Salário | SA = Salário Aumentado | RG = Reajuste ganho
+ scanf("%lf", &SL); // Leitura de variáveis
+ if (SL >= 0 && SL <= 400) // Verificação de percentual
+ { 
+     RG = SL * 0.15; // Cálculo Reajuste
+     SA = SL + RG; // Cálculo Salário Aumentado
+     printf("Novo salario: %.2lf\n", SA);
+     printf("Reajuste ganho: %.2lf\n", RG);
+     printf("Em percentual: 15 %\n");
+ }
+ else if (SL >= 400.01 && SL <= 800){
+     RG = SL * 0.12;
+     SA = SL + RG;
+     printf("Novo salario: %.2lf\n", SA);
+     printf("Reajuste ganho: %.2lf\n", RG);
+     printf("Em percentual: 12 %\n");
+ }
+ else if (SL >= 800.01 && SL <= 1200){
+     RG = SL * 0.10;
+     SA = SL + RG;
+     printf("Novo salario: %.2lf\n", SA);
+     printf("Reajuste ganho: %.2lf\n", RG);
+     printf("Em percentual: 10 %\n");
+ }
+ else if (SL >= 1200.01 && SL <= 2000){
+     RG = SL * 0.07;
+     SA = SL + RG;
+     printf("Novo salario: %.2lf\n", SA);
+     printf("Reajuste ganho: %.2lf\n", RG);
+     printf("Em percentual: 7 %\n");
+ }
+ else if (SL > 2000){
+     RG = SL * 0.04;
+     SA = SL + RG;
+     printf("Novo salario: %.2lf\n", SA);
+     printf("Reajuste ganho: %.2lf\n", RG);
+     printf("Em percentual: 4 %\n");
+ }
+ 
+    return 0;
+}

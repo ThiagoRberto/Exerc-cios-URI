@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int VL[5], I, X = 0; // Inicialização de variáveis, VL = Valor | X = Quantidade de números pares | I = Contador
+ for (I = 0 ; I < 5; I++) // Enquanto I menor que 5 passo 1 faça
+ {
+   scanf("%d", &VL[I]); // Leitura de Variável 
+   if (VL[I] % 2 == 0) // Verificador de número positivo
+   {
+       X = X + 1;
+   }
+ }
+ printf("%d valores pares\n", X);
+    return 0;
+}

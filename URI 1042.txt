@@ -1,0 +1,55 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+ int A, B, C; // Inicialização de variáveis
+ scanf("%d %d %d", &A, &B, &C); // Leitura de variáveis
+ if (A >= B && B >= C) // Verificador de ordem
+ {
+   printf("%d\n", C);
+   printf("%d\n", B);
+   printf("%d\n", A);  
+ }
+ else if (B>= A && A >= C)
+ {
+   printf("%d\n", C);
+   printf("%d\n", A);
+   printf("%d\n", B);  
+ }
+ else if (C >= A && A >= B)
+ {
+   printf("%d\n", B);
+   printf("%d\n", A);
+   printf("%d\n", C);  
+ }
+ else if (B >= C && C >= A)
+ {
+   printf("%d\n", A);
+   printf("%d\n", C);
+   printf("%d\n", B);  
+ }
+ else if (C >= B && B >= A)
+ {
+   printf("%d\n", A);
+   printf("%d\n", B);
+   printf("%d\n", C);  
+ }
+ else if (A >= C && C >= B)
+ {
+   printf("%d\n", B);
+   printf("%d\n", C);
+   printf("%d\n", A);  
+ }
+ printf("\n");
+ printf("%d\n", A);
+ printf("%d\n", B);
+ printf("%d\n", C);
+    return 0;
+}
