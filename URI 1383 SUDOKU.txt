@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+int main() {
+ int INS, I = 0, QD, QD2, SL, SC; // Inicialização de variáveis, INS = Número de instâncias, I = Instância, QD = Quadrado, QD2 = Quadrado 2, SL = Soma de linhas, SC = Soma de colunas
+ int M[9][9], SM[3][3], LI, CO, VERI = 1; // M = Matriz, SM = Submatriz, LI = Linha, CO = Coluna, VERI = Verificador de instância;
+ scanf("%d", &INS); // Leitura de número de instâncias
+ for (I = 1; I <= INS; I++) // Enquanto Instância menor igual a Número de instâncias passo 1 faça
+ {
+     VERI = 1; // Resetando verificador de instâncias
+     SL = 0; // Resetando soma de linhas
+     SC = 0; // Resetando soma de colunas
+     LI = 0; // Resetando contador de linha
+     CO = 0; // Resetando contador de coluna
+     QD = 0; // Resetando quadrado de número inserido
+     QD2 = 0; // Resetando segundo quadrado de número inserido
+     for (LI = 0; LI < 9; LI++) // Verificador de número de linha
+        {
+            for (CO = 0; CO < 9; CO++) // Verificador de número de coluna
+                {
+                   scanf("%d", &M[LI][CO]); // Leitura de linha e coluna
+                }
+    }
+    for (LI = 0; LI < 9; LI++) // Verificador de número de linha
+    {
+        for (CO = 0; CO < 9; CO++) // Verificador de número de coluna
+        {
+            QD = M[LI][CO] * M[LI][CO]; // Quadrado do número inserido para verificação em colunas
+            QD2 = M[CO][LI] * M[CO][LI]; // Quadrado do número inserido para verificação em linhas
+            SC = SC + QD; // Verificador de colunas
+            SL = SL + QD2; // Verificador de linhas
+        }
+        if (SC != 285) // Caso valor verificado pela soma dos quadrados de uma coluna seja diferente de 285, VERI receberá valor 0
+            {
+                VERI = 0;
+            }
+        if (SL != 285) // Caso valor verificado pela soma dos quadrados de uma linha seja diferente de 285, VERI receberá valor 0
+            {
+                VERI = 0;
+            }
+        SL = 0;
+        SC = 0;
+    }
+    for (LI = 0; LI < 3; LI++) // Verificador de número de linha
+        {
+            for (CO = 0; CO < 3; CO++) // Verificador de número de coluna
+                {
+                    SM[LI][CO] = 0; // Resetanddo submatriz
+                }
+        }
+    for (LI = 0; LI < 9; LI++) // Verificador de número de linha
+        {
+            for (CO = 0; CO < 9; CO++) // Verificador de número de coluna
+                {
+                   QD = M[LI][CO] * M[LI][CO]; // Quadrado de matriz
+                   SM[LI/3][CO/3] = SM[LI/3][CO/3] + QD; // Verificador de submatrizes
+                }
+    }
+    for (LI = 0; LI < 3; LI++) // Verificador de número de linha
+        {
+            for (CO = 0; CO < 3; CO++) // Verificador de número de coluna
+                {
+                    if (SM[LI][CO] != 285) // Caso valor verificado pela soma dos quadrados de uma submatriz seja diferente de 285, VERI receberá valor 0
+                    {
+                      VERI = 0;
+                    }
+                }
+        }
+    if (VERI == 1) // Verificador de instância válida
+    {
+        printf("Instancia %d\n", I);
+        printf("SIM\n\n");
+    }
+    else {
+        printf("Instancia %d\n", I);
+        printf("NAO\n\n");
+    }
+ }
+    return 0;
+}
